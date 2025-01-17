@@ -174,7 +174,7 @@ pub fn cpu(config: Config) -> Result<(), Box<dyn Error>> {
                 let full_salt = format!("0x{}{}", &header_hex_string[42..], &body_hex_string);
                 let add = format!("{}", address);
                 // display the salt and the address.
-                if add.starts_with("0xb319") &&  add.ends_with("b319"){
+                if add.starts_with("0xb139") {
                     let output = format!(
                         "{full_salt} => {address}",
                     );
